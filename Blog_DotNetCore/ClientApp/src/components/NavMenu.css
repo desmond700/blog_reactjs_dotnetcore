@@ -1,0 +1,89 @@
+.Navbar li .glyphicon {
+    margin-right: 10px;
+}
+
+/* Highlighting rules for nav menu items */
+.Navbar .navbar-nav .active a,
+.Navbar .navbar-nav .active a:hover,
+.Navbar .navbar-nav .active a:focus {
+  background-image: none;
+  background-color: #4189C7;
+  color: white;
+}
+
+.blog-main {
+  margin-top: 166px;
+
+}
+
+::after{
+  margin: auto 0
+}
+
+.dropdown-menu {
+  z-index: 9999
+}
+
+@media (min-width: 768px) {
+  /* On large screens, convert the nav menu to a vertical sidebar */
+  .Navbar {
+    position: fixed;
+    border-radius: 0;
+    border-width: 0;
+    height: 100vh;
+    width: 220px;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+  .Navbar .navbar-collapse {
+    border-top: 1px solid #444;
+    padding: 0;
+  }
+  .Navbar .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+  .Navbar .container-fluid .navbar-brand {
+    margin: 0;
+  }
+  .Navbar ul {
+    float: none;
+  }
+  .Navbar li {
+    list-style-type: none;
+    float: none;
+    font-size: 15px;
+  }
+  .Navbar li a {
+    display: block;
+    padding: 10px 16px;
+    border-radius: 4px;
+  }
+  .Navbar li a:hover {
+    text-decoration: none;
+    background-color: #343a40;
+    color: #fff;
+  }
+
+  nav.nav-link li a {
+    color: #000;
+  }
+  nav.nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .Navbar a {
+    /* If a menu item's text is too long, truncate it */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .profile-edit{
+    position: absolute;
+      
+  }
+}

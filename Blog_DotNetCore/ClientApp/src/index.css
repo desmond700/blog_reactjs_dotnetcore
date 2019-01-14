@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Montserrat|Noto+Sans');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9;
+}
+
+.wrapper-sub {
+  position: absolute;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  padding: 0 8px;
+  margin-top: 166px;
+  margin-left: 210px;
+}
+
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    body {
+        padding-top: 50px;
+    }
+}

@@ -1,0 +1,123 @@
+
+
+.admin-navbar li .glyphicon {
+  margin-right: 10px;
+}
+
+/* Highlighting rules for nav menu items */
+.admin-navbar .Navbar-nav .active a,
+.admin-navbar .Navbar-nav .active a:hover,
+.admin-navbar .Navbar-nav .active a:focus {
+  background-image: none;
+  background-color: #4189C7;
+  color: white;
+}
+
+a{
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    /* On large screens, convert the nav menu to a vertical sidebar */
+
+    html, body {
+      height: 100%;
+    }
+
+  .admin-navbar {
+    position: fixed;
+    height: 100%;
+    width: 210px;
+    border-radius: 0;
+    border-width: /****-+*/ 0;
+
+  }
+
+  .nav-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .navbar-header {
+    float: none;
+    width: 100%;
+  }
+  .admin-navbar .navbar-collapse {
+    border-top: 1px solid #444;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .admin-navbar .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+  .admin-navbar .container-fluid .navbar-brand {
+    margin: 0;
+  }
+  .navbar ul {
+    float: none;
+  }
+  .admin-navbar li {
+    list-style-type: none;
+    float: none;
+    font-size: 15px;
+  }
+  .admin-navbar li a {
+    display: block;
+    padding: 10px 16px;
+    border-radius: 4px;
+  }
+
+  nav#admin_link li a {
+    color: #fff;
+  }
+
+  nav#admin_link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .admin-navbar li a:hover {
+    text-decoration: none;
+    background-color: #4189C7;
+  }
+
+  .admin-navbar a {
+    /* If a menu item's text is too long, truncate it */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  nav.sub-collapse{
+    display: none;
+  }
+
+  nav.sub-collapse li {
+    background-color: #444d63;
+  }
+
+  .admin-main {
+    display: flex;
+    padding: 0 8px;
+    margin-left: 210px;
+  }
+
+  .organise-post{
+    padding: 3px 0;
+  }
+  .organise-post li{
+    list-style-type: none;
+    display: inline;
+  }
+  .organise-post > li::after {
+    content: " | ";
+  }
+
+  .organise-post > li:last-child::after {
+    content: "";
+  }
+}

@@ -1,0 +1,193 @@
+
+
+.navbar li .glyphicon {
+  margin-right: 10px;
+}
+
+/* Highlighting rules for nav menu items */
+.user-navbar .Navbar-nav .active a,
+.user-navbar .Navbar-nav .active a:hover,
+.user-navbar .Navbar-nav .active a:focus {
+  background-image: none;
+  background-color: #4189C7;
+  color: #000;
+}
+
+
+
+a{
+  cursor: pointer;
+}
+
+.result-tiles {
+  border: 1px solid;
+  box-shadow: 5px 10px #333;
+}
+
+nav.user-stats-list{
+
+}
+
+nav.user-stats-list ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav.user-stats-list ul li {
+  padding: 10px 5px;
+  border-bottom: 1px solid #000;
+}
+
+  nav.user-stats-list ul li:last-child {
+    border-bottom: none;
+  }
+
+nav.user-stats-list ul li p {
+  margin: 0;
+}
+
+.stat-icon {
+  font-size: 30px
+}
+
+/**/
+.user-navbar {
+  position: fixed;
+  height: 100%;
+  width: 210px;
+  border-radius: 0;
+  border-width: /****-+*/ 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.nav-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 8px;
+}
+
+.navbar-header {
+  float: none;
+  width: 100%;
+}
+
+.user-navbar .navbar-collapse {
+  border-top: 1px solid #444;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.user-navbar .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+  .user-navbar .container-fluid .navbar-brand {
+    margin: 0;
+  }
+
+.user-navbar ul {
+  float: none;
+}
+
+.user-navbar li {
+  list-style-type: none;
+  float: none;
+  font-size: 15px;
+}
+
+  .user-navbar li a {
+    display: block;
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: #000;
+  }
+
+nav#admin_link {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.user-navbar li a:hover {
+  text-decoration: none;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.user-navbar li button {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
+  padding: .395rem .95rem;
+  line-height: 1.8;
+  -webkit-appearance: button;
+}
+
+  .user-navbar li button:hover {
+    text-decoration: none;
+    background-color: #343a40;
+    cursor: pointer;
+    color: #fff;
+  }
+
+.user-navbar a {
+  /* If a menu item's text is too long, truncate it */
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+nav.sub-collapse {
+  display: none;
+}
+
+  nav.sub-collapse li {
+    background-color: #444d63;
+  }
+
+@media (max-width: 799px) {
+  .user-navbar {
+    top: 0;
+    display: none;
+  }
+
+  .wrapper-sub {
+    position: static;
+  }
+
+  .main{
+    margin-top: 166px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  /* On large screens, convert the nav menu to a vertical sidebar */
+  html, body {
+      height: 100%;
+    }
+
+  .user-navbar {
+    top: 166px;
+  }
+
+  .organise-post{
+    padding: 3px 0;
+  }
+  .organise-post li{
+    list-style-type: none;
+    display: inline;
+  }
+  .organise-post > li::after {
+    content: " | ";
+  }
+
+  .organise-post > li:last-child::after {
+    content: "";
+  }
+}
